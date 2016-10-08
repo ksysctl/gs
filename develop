@@ -1,0 +1,27 @@
+Laravel ORM+MVC
+-Artisan: CLI
+-Illuminate (Composer 4)
+-Homestead: VM w/Laravel
+Uses Composer as package system.
+
+ -Elixir: Assets
+ -Scheduler: Tasks
+ -Blade: Template
+...
+
+# System: Mongo xx + Laravel xx + PHP 7
+sudo apt-get install php composer php-mbstring php-zip php-xml
+
+# Bash
+echo 'PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> ~/.profile
+source ~/.profile
+
+# Laravel
+composer global require "laravel/installer"
+
+laravel new gs
+cd gs
+
+# Run
+php artisan serve --host=0.0.0.0 --port=8080
+
