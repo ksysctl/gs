@@ -18,4 +18,3 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:api');
 
 Route::get('/match', 'Match\MatchController@index');
-Route::get('/match/{id}', 'Match\MatchController@show');

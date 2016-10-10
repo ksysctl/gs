@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class SpreadsheetServiceProvider extends ServiceProvider
+class MatchServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -22,8 +22,8 @@ class SpreadsheetServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('Spreadsheet', function() {
-            return new \App\Spreadsheet;
+        $this->app->bind('Match', function() {
+            return new \App\Match;
         });
     }
 }

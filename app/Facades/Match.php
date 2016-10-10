@@ -4,7 +4,7 @@ namespace App\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Spreadsheet extends Facade
+class Match extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class Spreadsheet extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Spreadsheet';
+        return 'Match';
     }
 }

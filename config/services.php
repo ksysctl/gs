@@ -34,5 +34,11 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    
+    'match' => [
+        'spreadsheet' => [
+            'url' => env('MATCH_SPREADSHEET_URL'),
+        ]
+    ],
 
 ];
